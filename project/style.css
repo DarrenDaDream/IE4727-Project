@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:monospace ;
+    color: #151414;
+    background-color: #ffffff; /* Set a light background for the entire page */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #040404;
+    color: #fff;
+}
+/* Center the logo container itself */
+.logo-row {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    padding: 20px;
+    background-color: #333;  /* Optional background color */
+}
+
+/* Style the logo link */
+.logo-row a {
+    font-size: 2em;          /* Adjust font size as needed */
+    color: #fff;             /* Optional text color */
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header .user-options a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.page-banner {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333;
+    border-bottom: 1px solid #ddd; /* Subtle border */
+    margin-bottom: 20px;
+}
+
+.page-banner h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.page-banner p {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.hero {
+    background-image: url("images/Mainpage.jpg"); /* Replace with the correct path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.hero .shop-now {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.featured-products {
+    padding: 50px 20px; /* Existing padding */
+    text-align: center;
+    margin-top: 20px; /* Add this line for extra space */
+    align-items: center;
+}
+
+.featured-products h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+.product-card{
+    box-sizing: border-box;
+    background-color: #fff; /* Match this to the page background */
+    padding: 15px;
+    width: 200px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 200;
+    margin: 5px; /* Reduced margin around each product */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing is consistent */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
+}
+.product-grid {
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between product cards */
+    max-width: 1200px; /* Set max width to control the grid width */
+    margin: 0 auto; /* Center the grid within the page */
+}
+.product-card img {
+    width: 100%;
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images cover the area without stretching */
+    border-radius: 4px; /* Optional: Add rounded corners to images */
+}
+
+/* Product container layout */
+.product-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+}
+
+/* Product image styling */
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Product details styling */
+.product-info {
+    max-width: 600px;
+}
+
+.product-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #666;
+}
+
+.product-info label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.product-info select {
+    padding: 8px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.product-info button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.product-info button:hover {
+    background-color: #555;
+}
+
+/* Cart message styling */
+.cart-message {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #e9f6e9;
+    color: #3c763d;
+    border: 1px solid #c8e5c8;
+    text-align: center;
+}
+
+.cart-message a {
+    color: #3c763d;
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px; /* Top and bottom padding */
+    text-align: left; /* Align text to the left */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Space sections evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-section {
+    flex: 1; /* Equal space for each section */
+    min-width: 200px; /* Minimum width for sections */
+    margin: 10px; /* Margin between sections */
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+.footer-section ul li a:hover {
+    color: #f4f4f4; /* Change color on hover */
+}
+
+.footer-bottom {
+    text-align: center; /* Center text for copyright */
+    margin-top: 20px;
+    font-size: 0.9em; /* Smaller font for copyright text */
+}
+/* New Arrivals Page Styles */
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for sidebar */
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.product-grid {
+    flex: 1; /* Allow product grid to take the remaining space */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align items to the start */
+    padding: 20px;
+}
+
+/* Updated product card styles */
+.product {
+    background-color: #fff; /* Match this to the page background */
+    padding: 15px;
+    width: 200px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px; /* Reduced margin around each product */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing is consistent */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
+}
+
+.product:hover {
+    transform: translateY(-3px); /* Slightly lift the card */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.product img {
+    width: 100%;
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images cover the area without stretching */
+    border-radius: 4px; /* Optional: Add rounded corners to images */
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product p {
+    color: #333;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+/* Order Confirmation Container */
+.order-confirmation-container {
+    width: 80%;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.order-confirmation-title {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.order-confirmation-message {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.order-number, .total-price {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
